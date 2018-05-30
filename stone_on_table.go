@@ -11,15 +11,11 @@ func main(){
 	k:=0
 	for i,_ := range scale{
 		if(i==len(scale)-1){
-				break}
-		if(scale[i]==scale[i+1]){
-			k=k+1
-			
+			break
 		}
-		
-
-	
+		if(scale[i]==scale[i+1]){
+			k=k+1	
+		}
 }
 fmt.Println(k)
-
 }
