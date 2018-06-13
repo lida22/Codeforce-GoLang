@@ -1,3 +1,6 @@
+/*
+Codeforce - A. George and Accommodation
+*/
 package main
 import (
 	"fmt"
