@@ -2,9 +2,11 @@
 Codeforce - A. George and Accommodation
 */
 package main
+
 import (
 	"fmt"
 )
+
 func main() {
 	var no, a, b, avail, tmp, sum int
 	fmt.Scan(&no)
@@ -12,7 +14,6 @@ func main() {
 	tmp = 0
 	arr := []int{}
 	arr1 := []int{}
-	//total := []int{}
 	for i := 0; i < no; i++ {
 		fmt.Scan(&a, &b)
 		arr = append(arr, a)
@@ -21,12 +22,10 @@ func main() {
 	for j := 0; j < len(arr); j++ {
 		if arr[j] == arr1[j] {
 			tmp = 0
-			//total = append(total, avail)
 		}
 		if arr[j] < arr1[j] {
-			if arr1[j] - arr[j] >= 2 {
+			if arr1[j]-arr[j] >= 2 {
 				avail = avail + 1
-				//total = append(total, avail)	
 			}
 		}
 	}
@@ -34,4 +33,5 @@ func main() {
 	fmt.Println(sum)
 
 }
+
 
